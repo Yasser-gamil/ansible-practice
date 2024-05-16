@@ -1,0 +1,10 @@
+- name: Install nginx
+  apt:
+    name: "{{package}}"
+    state: "{{version}}"
+  notify: my_handler
+  changed_when: true
+- name: template_run
+  template:
+    src: index.html.j2
+    dest: /var/www/html/index.html

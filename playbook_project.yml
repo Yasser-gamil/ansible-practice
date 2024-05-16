@@ -1,0 +1,4 @@
+- name: My first play
+  hosts: all
+  roles:
+    - web

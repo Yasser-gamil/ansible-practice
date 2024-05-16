@@ -1,0 +1,8 @@
+---
+# vars file for web
+package: nginx
+version: latest
+my_message: finished
+all_sources:
+  - index2.html
+  - file.css
